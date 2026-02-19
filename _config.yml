@@ -8,8 +8,8 @@ footer_text: >-
 
 lang: es
 icon: ""
-url: ""
-baseurl: ""
+url: "https://cilab-uchile.github.io"
+baseurl: "/site"
 
 navbar_fixed: true
 footer_fixed: false
