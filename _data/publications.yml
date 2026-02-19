@@ -1,0 +1,63 @@
+- title: "Normalized mutual information feature selection"
+  authors: "P. A. Estévez, M. Tesmer, C. A. Perez, J. M. Zurada"
+  venue: "IEEE Transactions on Neural Networks"
+  year: 2009
+  cites: 1656
+  note: "Trabajo de referencia en selección de características"
+  link: "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=8678804336845127504"
+
+- title: "A review of feature selection methods based on mutual information"
+  authors: "J. R. Vergara, P. A. Estévez"
+  venue: "Neural Computing and Applications"
+  year: 2014
+  cites: 1584
+  note: "Revisión de alto impacto en selección de variables"
+  link: "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=5123508732607927808"
+
+- title: "The automatic learning for the rapid classification of events (ALeRCE) alert broker"
+  authors: "F. Förster, G. Cabrera-Vives, E. Castillo-Navarrete, P. A. Estévez, et al."
+  venue: "The Astronomical Journal"
+  year: 2021
+  cites: 274
+  note: "Infraestructura de clasificación astronómica en tiempo real"
+  link: "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=6443851950491997422"
+
+- title: "Alert classification for the ALeRCE broker system: The light curve classifier"
+  authors: "P. Sánchez-Sáez, I. Reyes, C. Valenzuela, F. Förster, S. Eyheramendy, et al."
+  venue: "The Astronomical Journal"
+  year: 2021
+  cites: 198
+  note: "Clasificación de curvas de luz para alertas astronómicas"
+  link: "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=7246149934768738715"
+
+- title: "Deep-hits: Rotation invariant convolutional neural network for transient detection"
+  authors: "G. Cabrera-Vives, I. Reyes, F. Förster, P. A. Estévez, J. C. Maureira"
+  venue: "The Astrophysical Journal"
+  year: 2017
+  cites: 156
+  note: "Redes convolucionales para detección de transientes"
+  link: "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=12913436554683025595"
+
+- title: "Computational intelligence challenges and applications on large-scale astronomical time series databases"
+  authors: "P. Huijse, P. A. Estévez, P. Protopapas, J. C. Principe, P. Zegers"
+  venue: "IEEE Computational Intelligence Magazine"
+  year: 2014
+  cites: 113
+  note: "Panorama de desafíos de IA en series de tiempo astronómicas"
+  link: "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=16819909216531017986"
+
+- title: "Selecting the most influential nodes in social networks"
+  authors: "P. A. Estévez, P. Vera, K. Saito"
+  venue: "IJCNN"
+  year: 2007
+  cites: 106
+  note: "Minería de redes y análisis de influencia"
+  link: "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=11119707553319441306"
+
+- title: "Multi-objective optimal design of lithium-ion battery packs based on evolutionary algorithms"
+  authors: "B. Severino, F. Gana, R. Palma-Behnke, P. A. Estévez, et al."
+  venue: "Journal of Power Sources"
+  year: 2014
+  cites: 108
+  note: "Optimización evolutiva aplicada a energía"
+  link: "https://scholar.google.com/scholar?oi=bibs&hl=es&cites=17847731793610749334"

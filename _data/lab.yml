@@ -1,0 +1,47 @@
+tagline: "Algoritmos y teoria para entender datos complejos"
+about: "El laboratorio desarrolla investigacion en aprendizaje de maquina, teoria de la informacion y redes neuronales, con foco reciente en modelos de atencion, aprendizaje auto-supervisado, vision por computador y analisis de series de tiempo."
+
+focus_areas:
+  - "Astroinformatica: clasificacion de curvas de luz, deteccion de novedades y objetos transientes"
+  - "IA biomedica: explicabilidad (xAI), EEG de sueno/epilepsia, segmentacion y apoyo a diagnostico en imagenes medicas"
+  - "Modelos modernos de IA: atencion, transformers, LLM, auto-supervisado y deep learning"
+  - "Metodologia de inteligencia computacional: teoria de informacion, regresion simbolica y optimizacion"
+
+thesis_snapshot:
+  period: "2021-2024"
+  total_magister_theses: 21
+  yearly_counts:
+    "2021": 3
+    "2022": 4
+    "2023": 7
+    "2024": 7
+  thematic_counts:
+    astroinformatica: 10
+    metodos_modernos_ia: 11
+    biomedica_neuro: 6
+  note: "Conteo exploratorio basado en titulos del CSV de tesis de Magister con Pablo Estevez como guia."
+
+equipment:
+  - "8 PCs Intel i5"
+  - "2 GPU NVIDIA Tesla C2070"
+  - "2 GPU GTX 285"
+
+projects:
+  - "Proyecto Fondecyt 1110701"
+  - "Proyecto INNOVA 11IDL2-13673"
+  - "Proyecto INNOVA 12IDL2-16296"
+  - "Proyecto Basal Centro de Tecnología para la Minería"
+
+responsible:
+  name: "Pablo A. Estévez"
+  role: "Profesor Titular, Universidad de Chile · Académico responsable"
+  degree: "Dr. Ing. (University of Tokyo, Japon)"
+  email: "pestevez@cec.uchile.cl"
+  phone: "+56 2 2978 4211"
+  scholar: "https://scholar.google.com/citations?user=SM1ghUEAAAAJ&hl=es"
+
+contact:
+  office: "Av. Tupper 2007, Santiago, Chile"
+  dept_phone: "+56 2 2978 4196"
+  dept_email: "secdirdie@ing.uchile.cl"
+  map: "https://goo.gl/maps/TxrHfdtHiWP9GG9Q8"
