@@ -1,7 +1,59 @@
-remote_theme: pages-themes/cayman@v0.2.0
+title: Laboratorio de Inteligencia Computacional
+first_name: Laboratorio de
+last_name: Inteligencia Computacional
+description: >-
+  Investigacion en aprendizaje de maquina, redes neuronales, computacion evolutiva y series de tiempo astronomicas.
+footer_text: >-
+  Departamento de Ingenieria Electrica, Universidad de Chile.
+
+lang: es
+icon: ""
+url: "https://cilab-uchile.github.io"
+baseurl: "/site"
+
+navbar_fixed: true
+footer_fixed: false
+search_enabled: false
+enable_darkmode: true
+enable_navbar_social: false
+max_width: 1120px
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: "_projects"
+      type: projects
+    values:
+      layout: project
+
+include:
+  - _pages
+
+exclude:
+  - _site
+  - .jekyll-cache
+  - tmp
+  - vendor
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Dockerfile
+  - docker-compose.yml
+  - docker-compose-slim.yml
+
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-cache-bust
 
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
 
-title: Computational intelligence Lab
-description: In our lab new algorithms and methods (theory) are developed
+sass:
+  style: compressed

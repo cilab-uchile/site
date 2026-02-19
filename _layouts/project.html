@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <p class="text-muted"><small>Resumen de Proyecto</small></p>
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.authors %}
+      <p class="text-muted"><small>{{ page.authors | join: " · " }}</small></p>
+    {% endif %}
+    {% if page.affiliations %}
+      <p class="text-muted"><small>{{ page.affiliations | join: " · " }}</small></p>
+    {% endif %}
+  </header>
+
+  {% if page.abstract %}
+    <section class="card mb-3"><div class="card-body">
+      <h2>Abstract</h2>
+      <p>{{ page.abstract }}</p>
+      {% if page.links %}<p class="mb-0">{% for link in page.links %}<a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">[{{ link.label }}]</a>{% unless forloop.last %} {% endunless %}{% endfor %}</p>{% endif %}
+    </div></section>
+  {% endif %}
+
+  {% if page.citation %}
+    <section class="card mb-3"><div class="card-body">
+      <h2>Citation</h2>
+      <p>{{ page.citation }}</p>
+    </div></section>
+  {% endif %}
+
+  {% if page.method %}
+    <section class="card mb-3"><div class="card-body">
+      <h2>Method</h2>
+      <p>{{ page.method }}</p>
+      {% if page.method_figure %}
+        <figure class="mb-0">
+          <img class="img-fluid w-100" style="max-width: 100%; height: auto;" src="{{ page.method_figure }}" alt="Esquema metodologico del proyecto {{ page.title }}">
+          {% if page.method_caption %}
+            <figcaption class="text-muted mt-2"><small>{{ page.method_caption }}</small></figcaption>
+          {% endif %}
+        </figure>
+      {% endif %}
+    </div></section>
+  {% endif %}
+
+  {% if page.results %}
+    <section class="card mb-3"><div class="card-body">
+      <h2>Results</h2>
+      <p>{{ page.results }}</p>
+      {% if page.result_figure %}
+        <figure class="mb-0">
+          <img class="img-fluid w-100" style="max-width: 100%; height: auto;" src="{{ page.result_figure }}" alt="Resultados del proyecto {{ page.title }}">
+          {% if page.result_caption %}
+            <figcaption class="text-muted mt-2"><small>{{ page.result_caption }}</small></figcaption>
+          {% endif %}
+        </figure>
+      {% endif %}
+    </div></section>
+  {% endif %}
+</article>
