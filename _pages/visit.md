@@ -4,38 +4,40 @@ title: Visitanos
 permalink: /visit/
 nav: true
 nav_order: 5
+nav_key: nav.visit
+lang: es
 ---
 
-Informacion de contacto del Departamento de Ingenieria Electrica y del laboratorio.
+{% include t.liquid key="visit.intro" %}
 
-## Direccion
+## {% include t.liquid key="visit.address_heading" %}
 
 <div class="card mb-3">
   <div class="card-body">
     <p class="mb-2">{{ site.data.lab.contact.office }}</p>
-    <a href="{{ site.data.lab.contact.map }}" target="_blank" rel="noopener noreferrer">Abrir en mapa</a>
+    <a href="{{ site.data.lab.contact.map }}" target="_blank" rel="noopener noreferrer">{% include t.liquid key="common.open_in_map" %}</a>
   </div>
 </div>
 
-## Contacto DIE
+## {% include t.liquid key="visit.die_contact_heading" %}
 
 <div class="card mb-3">
   <div class="card-body">
-    <p class="mb-1">Telefono: {{ site.data.lab.contact.dept_phone }}</p>
-    <p class="mb-0">Email: <a href="mailto:{{ site.data.lab.contact.dept_email }}">{{ site.data.lab.contact.dept_email }}</a></p>
+    <p class="mb-1">{% include t.liquid key="common.phone_label" %} {{ site.data.lab.contact.dept_phone }}</p>
+    <p class="mb-0">{% include t.liquid key="common.email_label" %} <a href="mailto:{{ site.data.lab.contact.dept_email }}">{{ site.data.lab.contact.dept_email }}</a></p>
   </div>
 </div>
 
-## Contacto del laboratorio
+## {% include t.liquid key="visit.lab_contact_heading" %}
 
 <div class="card mb-3">
   <div class="card-body">
-    <p class="mb-1">Responsable: {{ site.data.lab.responsible.name }}</p>
-    <p class="mb-1">Email: <a href="mailto:{{ site.data.lab.responsible.email }}">{{ site.data.lab.responsible.email }}</a></p>
-    <p class="mb-0">Telefono: {{ site.data.lab.responsible.phone }}</p>
+    <p class="mb-1">{% include t.liquid key="visit.responsible_label" %} {{ site.data.lab.responsible.name }}</p>
+    <p class="mb-1">{% include t.liquid key="common.email_label" %} <a href="mailto:{{ site.data.lab.responsible.email }}">{{ site.data.lab.responsible.email }}</a></p>
+    <p class="mb-0">{% include t.liquid key="common.phone_label" %} {{ site.data.lab.responsible.phone }}</p>
   </div>
 </div>
 
-## Como llegar
+## {% include t.liquid key="visit.how_to_get_heading" %}
 
-Campus Beauchef / Av. Tupper, Santiago. Recomendamos agendar visita por correo antes de asistir para coordinar acceso a laboratorio y reuniones tecnicas.
+{% include t.liquid key="visit.how_to_get_text" %}

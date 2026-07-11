@@ -1,0 +1,112 @@
+nav:
+  about: Home
+  people: People
+  projects: Projects
+  publications: Publications
+  visit: Visit Us
+  impacts: Impact
+
+common:
+  toggle_navigation: Toggle navigation
+  institutional_profile: Institutional profile
+  google_scholar_profile: Google Scholar profile
+  google_scholar: Google Scholar
+  profile: Profile
+  view_thesis: View thesis
+  view_thesis_repo: View thesis in repository
+  view_record: View record
+  view_full_summary: View full summary
+  open_in_map: Open in map
+  email_label: "Email:"
+  phone_label: "Phone:"
+  guide_label: "Advisor:"
+  co_guide_label: "Co-advisor / committee:"
+  citations_suffix: citations
+  lang_toggle_title: Switch language
+
+footer:
+  text: Department of Electrical Engineering, University of Chile.
+
+about:
+  active_lines_heading: Active Research Lines
+  thesis_synthesis_heading: Recent Insights from Master's Theses
+  thesis_intro_prefix: "Between "
+  thesis_intro_middle: ", "
+  thesis_intro_bold_suffix: " Master's theses"
+  thesis_intro_suffix: " have been recorded under the lab's supervision. The theses show sustained growth and consolidation of lines in astroinformatics, biomedical AI, and modern learning models."
+  thesis_chart_title: Master's Theses by Year (2021-2024)
+  chart_series_label: Master's Theses by Year
+  chart_y_axis_label: Number of theses
+  chart_x_axis_label: Year
+  projects_capacity_heading: Projects and Technical Capacity
+  base_equipment_heading: Base Equipment
+  reference_projects_heading: Reference Projects
+  academic_lead_heading: Academic Lead
+  project_blog_heading: Project Blog
+  news_heading: News
+  professor_metrics_heading: Professor Profile Metrics
+  total_citations: total citations
+  h_index: h-index
+  i10_index: i10-index
+  citations_since_2021: citations since 2021
+  scholar_source_note: "Source: public Google Scholar profile of Pablo A. Estévez (snapshot retrieved February 2026)."
+
+people:
+  intro: Seed page to organize lab members, collaborators, and applications.
+  leadership_heading: Leadership
+  line_collaborators_heading: Collaborating Faculty
+  active_students_heading: Thesis Students
+  active_students_note: Preliminary list of active students. Names already listed under Former Thesis Students are not repeated, except for Jhon Intriago per instruction.
+  former_students_heading: Former Thesis Students
+  former_students_note: "Photo mockup in <code>assets/img/people/</code>. Replace with a real photo once available."
+  thesis_label: Master's Thesis
+  alumni_heading: Alumni and Frequent Collaborators
+  join_heading: Want to Join Us?
+  join_intro: We are opening this version of the site to receive information from undergraduate, master's, and doctoral students. If you are interested in applied AI, time series, or learning theory, write to us with your CV and area of interest.
+  contact_label: "Contact:"
+
+visit:
+  intro: Contact information for the Department of Electrical Engineering and the lab.
+  address_heading: Address
+  die_contact_heading: DIE Contact
+  lab_contact_heading: Lab Contact
+  responsible_label: "Lead:"
+  how_to_get_heading: How to Get Here
+  how_to_get_text: Beauchef Campus / Av. Tupper, Santiago. We recommend scheduling a visit by email before attending, to coordinate lab access and technical meetings.
+
+impacts:
+  intro: "Beyond papers: student training, technology transfer, and scientific community."
+  human_capital_heading: Human Capital Formation
+  human_capital_prefix: "The lab integrates teaching and research through master's/doctoral theses and applied-AI engineering capstone projects. During "
+  human_capital_middle: ", "
+  human_capital_suffix: " Master's theses supervised by the lab have been recorded."
+  interdisciplinary_heading: Interdisciplinary Applications
+  interdisciplinary_text: Solutions are developed in astroinformatics and digital health, including light-curve and supernova classification, astronomical novelty detection, sleep/epilepsy EEG analysis, medical image segmentation, and attention/transformer-based modeling.
+  open_ecosystem_heading: Open Ecosystem
+  open_ecosystem_text: The site was built to facilitate structured extraction by AI agents and collaborative content updates.
+  recent_theses_heading: Recent Theses Supervised by the Lab
+  commitment_heading: Commitment
+  commitment_text: We promote collaboration among students, researchers, and academics from different areas to strengthen frontier research in computational intelligence.
+
+projects:
+  intro: "This section summarizes each project in a paper-style format: context, method, results, and citation. It can be used as a template for future lab work."
+
+publications:
+  intro: Initial curation based on Professor Pablo A. Estévez's Google Scholar profile. Not all publications in the profile correspond to the lab; entries here are prioritized for alignment with computational intelligence, astroinformatics, and machine learning.
+  featured_heading: Featured Publications
+  masters_heading: Master's Theses (special section)
+  masters_intro: List curated from Repositorio Académico U. de Chile for Master's theses where Pablo Estévez appears as thesis advisor.
+
+project:
+  summary_label: Project Summary
+  abstract_heading: Abstract
+  citation_heading: Citation
+  method_heading: Method
+  results_heading: Results
+  method_figure_alt: Methodology diagram for the project
+  result_figure_alt: Results for the project
+
+notfound:
+  body_prefix: "You will be redirected to the main page within 3 seconds. If not redirected, please go back to the "
+  home_link_text: home page
+  body_suffix: "."

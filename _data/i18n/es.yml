@@ -1,0 +1,112 @@
+nav:
+  about: Inicio
+  people: Personas
+  projects: Proyectos
+  publications: Publicaciones
+  visit: Visitanos
+  impacts: Impacto
+
+common:
+  toggle_navigation: Alternar navegacion
+  institutional_profile: Perfil institucional
+  google_scholar_profile: Perfil en Google Scholar
+  google_scholar: Google Scholar
+  profile: Perfil
+  view_thesis: Ver tesis
+  view_thesis_repo: Ver tesis en repositorio
+  view_record: Ver registro
+  view_full_summary: Ver resumen completo
+  open_in_map: Abrir en mapa
+  email_label: "Email:"
+  phone_label: "Telefono:"
+  guide_label: "Guia:"
+  co_guide_label: "Co-guia / comision:"
+  citations_suffix: citas
+  lang_toggle_title: Cambiar idioma
+
+footer:
+  text: Departamento de Ingenieria Electrica, Universidad de Chile.
+
+about:
+  active_lines_heading: Lineas activas
+  thesis_synthesis_heading: Sintesis reciente desde tesis de Magister
+  thesis_intro_prefix: "Entre "
+  thesis_intro_middle: " se registran "
+  thesis_intro_bold_suffix: " tesis de Magister"
+  thesis_intro_suffix: " con guia del laboratorio. Las tesis muestran crecimiento sostenido y consolidacion de lineas en astroinformatica, IA biomedica y modelos modernos de aprendizaje."
+  thesis_chart_title: Tesis de Magister por Año (2021-2024)
+  chart_series_label: Tesis de Magister por Año
+  chart_y_axis_label: Cantidad de tesis
+  chart_x_axis_label: Año
+  projects_capacity_heading: Proyectos y capacidad tecnica
+  base_equipment_heading: Equipamiento base
+  reference_projects_heading: Proyectos de referencia
+  academic_lead_heading: Responsable academico
+  project_blog_heading: Blog de proyectos
+  news_heading: Noticias
+  professor_metrics_heading: Metricas del perfil del profesor
+  total_citations: citas totales
+  h_index: indice h
+  i10_index: indice i10
+  citations_since_2021: citas desde 2021
+  scholar_source_note: "Fuente: perfil publico de Google Scholar de Pablo A. Estevez (captura consultada en febrero 2026)."
+
+people:
+  intro: Pagina semilla para organizar miembros del laboratorio, colaboradores y postulaciones.
+  leadership_heading: Liderazgo
+  line_collaborators_heading: Academicos colaboradores de la linea
+  active_students_heading: Alumnos Tesistas
+  active_students_note: Listado preliminar de alumnos activos. Se evita repetir personas que ya aparecen en Antiguos Tesistas, excepto Jhon Intriago segun indicacion.
+  former_students_heading: Antiguos Tesistas
+  former_students_note: "Mockup de foto en <code>assets/img/people/</code>. Reemplazar por foto real cuando exista."
+  thesis_label: Tesis de Magister
+  alumni_heading: Exalumnos y colaboradores frecuentes
+  join_heading: Quieres integrarte?
+  join_intro: Estamos abriendo esta version del sitio para recibir informacion de estudiantes de pregrado, magister y doctorado. Si te interesa trabajar en IA aplicada, series de tiempo o teoria de aprendizaje, escribenos con tu CV y tema de interes.
+  contact_label: "Contacto:"
+
+visit:
+  intro: Informacion de contacto del Departamento de Ingenieria Electrica y del laboratorio.
+  address_heading: Direccion
+  die_contact_heading: Contacto DIE
+  lab_contact_heading: Contacto del laboratorio
+  responsible_label: "Responsable:"
+  how_to_get_heading: Como llegar
+  how_to_get_text: Campus Beauchef / Av. Tupper, Santiago. Recomendamos agendar visita por correo antes de asistir para coordinar acceso a laboratorio y reuniones tecnicas.
+
+impacts:
+  intro: "Mas alla de papers: formacion de estudiantes, transferencia y comunidad cientifica."
+  human_capital_heading: Formacion de capital humano
+  human_capital_prefix: "El laboratorio integra docencia e investigacion a traves de tesis de magister/doctorado y memorias de ingenieria en IA aplicada. En el periodo "
+  human_capital_middle: " se registran "
+  human_capital_suffix: " tesis de Magister con guia del laboratorio."
+  interdisciplinary_heading: Aplicaciones interdisciplinarias
+  interdisciplinary_text: Se desarrollan soluciones en astroinformatica y salud digital, incluyendo clasificacion de curvas de luz y supernovas, deteccion de novedades astronomicas, analisis de EEG del sueno/epilepsia, segmentacion en imagenes medicas y modelamiento con atencion/transformers.
+  open_ecosystem_heading: Ecosistema abierto
+  open_ecosystem_text: El sitio se construyo para facilitar extraccion estructurada por agentes AI y actualizacion colaborativa de contenidos.
+  recent_theses_heading: Tesis recientes con guia del laboratorio
+  commitment_heading: Compromiso
+  commitment_text: Promovemos colaboracion entre estudiantes, investigadores y academicos de distintas areas para fortalecer la investigacion de frontera en inteligencia computacional.
+
+projects:
+  intro: "Este apartado resume cada proyecto con un formato estilo paper: contexto, metodo, resultados y cita. Se puede usar como plantilla para futuros trabajos del laboratorio."
+
+publications:
+  intro: Curaduria inicial basada en el perfil de Google Scholar del profesor Pablo A. Estevez. No todas las publicaciones del perfil corresponden al laboratorio; aqui se priorizan temas alineados a inteligencia computacional, astroinformatica y aprendizaje de maquina.
+  featured_heading: Publicaciones destacadas
+  masters_heading: Tesis de Magister (apartado especial)
+  masters_intro: Listado curado desde Repositorio Academico U. de Chile para tesis de Magister donde Pablo Estevez aparece como profesor guia.
+
+project:
+  summary_label: Resumen de Proyecto
+  abstract_heading: Resumen
+  citation_heading: Cita
+  method_heading: Metodo
+  results_heading: Resultados
+  method_figure_alt: Esquema metodologico del proyecto
+  result_figure_alt: Resultados del proyecto
+
+notfound:
+  body_prefix: "Seras redirigido a la pagina principal en 3 segundos. Si no eres redirigido, por favor vuelve a la "
+  home_link_text: pagina principal
+  body_suffix: "."

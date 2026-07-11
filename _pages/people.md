@@ -4,11 +4,13 @@ title: Personas
 permalink: /people/
 nav: true
 nav_order: 4
+nav_key: nav.people
+lang: es
 ---
 
-Pagina semilla para organizar miembros del laboratorio, colaboradores y postulaciones.
+{% include t.liquid key="people.intro" %}
 
-## Liderazgo
+## {% include t.liquid key="people.leadership_heading" %}
 
 <div class="row row-cols-1 g-3 mb-4">
 {% for person in site.data.people.leadership %}
@@ -23,8 +25,8 @@ Pagina semilla para organizar miembros del laboratorio, colaboradores y postulac
             <h5 class="card-title mb-1">{{ person.name }}</h5>
             <p class="text-muted mb-2"><small>{{ person.role }}</small></p>
             <p class="mb-2">{{ person.focus }}</p>
-            <a href="{{ person.profile }}" target="_blank" rel="noopener noreferrer">Perfil institucional</a> ·
-            <a href="{{ person.scholar }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            <a href="{{ person.profile }}" target="_blank" rel="noopener noreferrer">{% include t.liquid key="common.institutional_profile" %}</a> ·
+            <a href="{{ person.scholar }}" target="_blank" rel="noopener noreferrer">{% include t.liquid key="common.google_scholar" %}</a>
           </div>
         </div>
       </div>
@@ -33,7 +35,7 @@ Pagina semilla para organizar miembros del laboratorio, colaboradores y postulac
 {% endfor %}
 </div>
 
-## Academicos colaboradores de la linea
+## {% include t.liquid key="people.line_collaborators_heading" %}
 
 <div class="row row-cols-1 row-cols-lg-2 g-3 mb-4">
 {% for person in site.data.people.line_collaborators %}
@@ -43,16 +45,16 @@ Pagina semilla para organizar miembros del laboratorio, colaboradores y postulac
         <h6 class="card-title mb-1">{{ person.name }}</h6>
         <p class="text-muted mb-2"><small>{{ person.role }}</small></p>
         <p class="mb-2">{{ person.focus }}</p>
-        <a href="{{ person.profile }}" target="_blank" rel="noopener noreferrer">Perfil</a>
+        <a href="{{ person.profile }}" target="_blank" rel="noopener noreferrer">{% include t.liquid key="common.profile" %}</a>
       </div>
     </div>
   </div>
 {% endfor %}
 </div>
 
-## Alumnos Tesistas
+## {% include t.liquid key="people.active_students_heading" %}
 
-<p class="text-muted"><small>Listado preliminar de alumnos activos. Se evita repetir personas que ya aparecen en Antiguos Tesistas, excepto Jhon Intriago segun indicacion.</small></p>
+<p class="text-muted"><small>{% include t.liquid key="people.active_students_note" %}</small></p>
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mb-4">
 {% for student in site.data.students.active_students %}
@@ -68,9 +70,9 @@ Pagina semilla para organizar miembros del laboratorio, colaboradores y postulac
 {% endfor %}
 </div>
 
-## Antiguos Tesistas
+## {% include t.liquid key="people.former_students_heading" %}
 
-<p class="text-muted"><small>Mockup de foto en <code>assets/img/people/</code>. Reemplazar por foto real cuando exista.</small></p>
+<p class="text-muted"><small>{% include t.liquid key="people.former_students_note" %}</small></p>
 
 {% assign students_sorted = site.data.tesis_magister_profesor_guia_estevez | sort: "anio_publicacion" | reverse %}
 {% assign students_grouped = students_sorted | group_by: "nombre_alumno" %}
@@ -82,16 +84,16 @@ Pagina semilla para organizar miembros del laboratorio, colaboradores y postulac
       <img class="card-img-top" src="{{ '/assets/img/people/mockup-estudiante.jpg' | relative_url }}" alt="Foto mockup de estudiante">
       <div class="card-body">
         <h6 class="card-title mb-1">{{ student.name }}</h6>
-        <p class="text-muted mb-2"><small>Tesis de Magister · {{ thesis.anio_publicacion }}</small></p>
+        <p class="text-muted mb-2"><small>{% include t.liquid key="people.thesis_label" %} · {{ thesis.anio_publicacion }}</small></p>
         <p class="card-text mb-2">{{ thesis.nombre_tesis }}</p>
-        <a href="{{ thesis.link_repositorio }}" target="_blank" rel="noopener noreferrer">Ver tesis</a>
+        <a href="{{ thesis.link_repositorio }}" target="_blank" rel="noopener noreferrer">{% include t.liquid key="common.view_thesis" %}</a>
       </div>
     </div>
   </div>
 {% endfor %}
 </div>
 
-## Exalumnos y colaboradores frecuentes
+## {% include t.liquid key="people.alumni_heading" %}
 
 <div class="card mb-4">
   <div class="card-body">
@@ -103,8 +105,8 @@ Pagina semilla para organizar miembros del laboratorio, colaboradores y postulac
   </div>
 </div>
 
-## Quieres integrarte?
+## {% include t.liquid key="people.join_heading" %}
 
-Estamos abriendo esta version del sitio para recibir informacion de estudiantes de pregrado, magister y doctorado. Si te interesa trabajar en IA aplicada, series de tiempo o teoria de aprendizaje, escribenos con tu CV y tema de interes.
+{% include t.liquid key="people.join_intro" %}
 
-**Contacto:** [{{ site.data.lab.responsible.email }}](mailto:{{ site.data.lab.responsible.email }})
+**{% include t.liquid key="people.contact_label" %}** [{{ site.data.lab.responsible.email }}](mailto:{{ site.data.lab.responsible.email }})

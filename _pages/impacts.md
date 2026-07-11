@@ -4,23 +4,25 @@ title: Impacto
 permalink: /impacts/
 nav: true
 nav_order: 6
+nav_key: nav.impacts
+lang: es
 ---
 
-Mas alla de papers: formacion de estudiantes, transferencia y comunidad cientifica.
+{% include t.liquid key="impacts.intro" %}
 
-## Formacion de capital humano
+## {% include t.liquid key="impacts.human_capital_heading" %}
 
-<div class="card mb-3"><div class="card-body">El laboratorio integra docencia e investigacion a traves de tesis de magister/doctorado y memorias de ingenieria en IA aplicada. En el periodo {{ site.data.lab.thesis_snapshot.period }} se registran {{ site.data.lab.thesis_snapshot.total_magister_theses }} tesis de Magister con guia del laboratorio.</div></div>
+<div class="card mb-3"><div class="card-body">{% include t.liquid key="impacts.human_capital_prefix" %}{{ site.data.lab.thesis_snapshot.period }}{% include t.liquid key="impacts.human_capital_middle" %}{{ site.data.lab.thesis_snapshot.total_magister_theses }}{% include t.liquid key="impacts.human_capital_suffix" %}</div></div>
 
-## Aplicaciones interdisciplinarias
+## {% include t.liquid key="impacts.interdisciplinary_heading" %}
 
-<div class="card mb-3"><div class="card-body">Se desarrollan soluciones en astroinformatica y salud digital, incluyendo clasificacion de curvas de luz y supernovas, deteccion de novedades astronomicas, analisis de EEG del sueno/epilepsia, segmentacion en imagenes medicas y modelamiento con atencion/transformers.</div></div>
+<div class="card mb-3"><div class="card-body">{% include t.liquid key="impacts.interdisciplinary_text" %}</div></div>
 
-## Ecosistema abierto
+## {% include t.liquid key="impacts.open_ecosystem_heading" %}
 
-<div class="card mb-3"><div class="card-body">El sitio se construyo para facilitar extraccion estructurada por agentes AI y actualizacion colaborativa de contenidos.</div></div>
+<div class="card mb-3"><div class="card-body">{% include t.liquid key="impacts.open_ecosystem_text" %}</div></div>
 
-## Tesis recientes con guia del laboratorio
+## {% include t.liquid key="impacts.recent_theses_heading" %}
 
 <div class="card mb-3">
   <div class="card-body">
@@ -33,6 +35,6 @@ Mas alla de papers: formacion de estudiantes, transferencia y comunidad cientifi
   </div>
 </div>
 
-## Compromiso
+## {% include t.liquid key="impacts.commitment_heading" %}
 
-<div class="card"><div class="card-body">Promovemos colaboracion entre estudiantes, investigadores y academicos de distintas areas para fortalecer la investigacion de frontera en inteligencia computacional.</div></div>
+<div class="card"><div class="card-body">{% include t.liquid key="impacts.commitment_text" %}</div></div>
