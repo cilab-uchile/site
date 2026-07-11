@@ -2,6 +2,24 @@
 # file in assets/img/gallery/ and adding an entry here — no template
 # changes needed. `caption` is optional.
 - filename: gallery-01.jpg
-  caption: "Placeholder — replace with a real lab photo."
 - filename: gallery-02.jpg
-  caption: "Placeholder — replace with a real lab photo."
+- filename: gallery-03.jpg
+- filename: gallery-04.jpg
+- filename: gallery-05.jpg
+- filename: gallery-06.jpg
+- filename: gallery-07.jpg
+- filename: gallery-08.jpg
+- filename: gallery-09.jpg
+- filename: gallery-10.jpg
+- filename: gallery-11.jpg
+- filename: gallery-12.jpg
+- filename: gallery-13.jpg
+- filename: gallery-14.jpg
+- filename: gallery-15.jpg
+- filename: gallery-16.jpg
+- filename: gallery-17.jpg
+- filename: gallery-18.jpg
+- filename: gallery-19.jpg
+- filename: gallery-20.jpg
+- filename: gallery-21.jpg
+- filename: gallery-22.jpg
