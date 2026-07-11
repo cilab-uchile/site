@@ -30,20 +30,25 @@ layout: default
     {% if page.started or page.finished or page.stars %}
       <p class="post-meta">
         {% if page.started %}
-          <i class="fa-solid fa-play fa-sm" style="color: var(--global-tip-block) !important"></i> <em>{{ page.started }}</em>
+          <i class="fa-solid fa-play fa-sm" style="color: var(--global-tip-block) !important"></i>
+          <em>{{ page.started }}</em>
         {% endif %}
         {% if page.finished %}
           {% if page.started %}
             &nbsp;&middot;&nbsp;
           {% endif %}
-          <i class="fa-solid fa-stop fa-sm" style="color: #e56565 !important"></i> <em>{{ page.finished }}</em>
+          <i class="fa-solid fa-stop fa-sm" style="color: #e56565 !important"></i>
+          <em>{{ page.finished }}</em>
         {% endif %}
         {% if page.stars %}
           {% if page.started or page.finished %}
             &nbsp;&middot;&nbsp;
           {% endif %}
           {% if page.goodreads_review %}
-            <a target="_blank" href="https://www.goodreads.com/review/show/{{ page.goodreads_review }}"><i class="fa-brands fa-goodreads-g"></i>
+            <a
+              target="_blank"
+              href="https://www.goodreads.com/review/show/{{ page.goodreads_review }}"
+              ><i class="fa-brands fa-goodreads-g"></i>
           {% endif %}
           {% assign full_stars = page.stars | floor %}
           {% assign half_star = page.stars | minus: full_stars %}
@@ -77,11 +82,15 @@ layout: default
       </p>
     {% endif %}
     <p class="post-tags">
-      <a href="{{ year | prepend: '/books/' | relative_url }}"> <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}</a>
+      <a href="{{ year | prepend: '/books/' | relative_url }}">
+        <i class="fa-solid fa-calendar fa-sm"></i> {{ year -}}
+      </a>
       {% if tags != '' %}
         &nbsp;&middot;&nbsp;
         {% for tag in page.tags %}
-          <a href="{{ tag | slugify | prepend: '/books/tag/' | relative_url }}"> <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
+          <a href="{{ tag | slugify | prepend: '/books/tag/' | relative_url }}">
+            <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag -}}
+          </a>
           {% unless forloop.last %}
             &nbsp;
           {% endunless %}
@@ -91,7 +100,9 @@ layout: default
       {% if categories != '' %}
         &nbsp;&middot;&nbsp;
         {% for category in page.categories %}
-          <a href="{{ category | slugify | prepend: '/books/category/' | relative_url }}"> <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a>
+          <a href="{{ category | slugify | prepend: '/books/category/' | relative_url }}">
+            <i class="fa-solid fa-tag fa-sm"></i> {{ category -}}
+          </a>
           {% unless forloop.last %}
             &nbsp;
           {% endunless %}
@@ -105,7 +116,11 @@ layout: default
     {% if content == '' %}
       <figure class="empty-review">
         {% if page.cover %}
-          <img class="empty-review-cover" alt="{{ page.title }} cover" src="{{ site.baseurl }}/{{ page.cover }}">
+          <img
+            class="empty-review-cover"
+            alt="{{ page.title }} cover"
+            src="{{ site.baseurl }}/{{ page.cover }}"
+          >
           <figcaption class="empty-review-caption">
             Cover of <em>{{ page.title }}</em>
           </figcaption>
@@ -116,7 +131,8 @@ layout: default
             src="https://covers.openlibrary.org/b/olid/{{ page.olid }}-L.jpg?default=false"
           >
           <figcaption class="empty-review-caption">
-            Cover of <em>{{ page.title }}</em> on the <a href="https://openlibrary.org/olid/{{ page.olid }}">Open Library</a>.
+            Cover of <em>{{ page.title }}</em> on the
+            <a href="https://openlibrary.org/olid/{{ page.olid }}">Open Library</a>.
           </figcaption>
         {% elsif page.isbn %}
           <img
@@ -125,7 +141,8 @@ layout: default
             src="https://covers.openlibrary.org/b/isbn/{{ page.isbn }}-L.jpg?default=false"
           >
           <figcaption class="empty-review-caption">
-            Cover of <em>{{ page.title }}</em> on the <a href="https://openlibrary.org/isbn/{{ page.isbn }}">Open Library</a>.
+            Cover of <em>{{ page.title }}</em> on the
+            <a href="https://openlibrary.org/isbn/{{ page.isbn }}">Open Library</a>.
           </figcaption>
         {% endif %}
       </figure>
@@ -141,14 +158,22 @@ layout: default
             Cover of <em>{{ page.title }}</em>
           </figcaption>
         {% elsif page.olid %}
-          <img alt="{{ page.title }} cover" src="https://covers.openlibrary.org/b/olid/{{ page.olid }}-L.jpg?default=false">
+          <img
+            alt="{{ page.title }} cover"
+            src="https://covers.openlibrary.org/b/olid/{{ page.olid }}-L.jpg?default=false"
+          >
           <figcaption>
-            Cover of <em>{{ page.title }}</em> on the <a href="https://openlibrary.org/olid/{{ page.olid }}">Open Library</a>.
+            Cover of <em>{{ page.title }}</em> on the
+            <a href="https://openlibrary.org/olid/{{ page.olid }}">Open Library</a>.
           </figcaption>
         {% elsif page.isbn %}
-          <img alt="{{ page.title }} cover" src="https://covers.openlibrary.org/b/isbn/{{ page.isbn }}-L.jpg?default=false">
+          <img
+            alt="{{ page.title }} cover"
+            src="https://covers.openlibrary.org/b/isbn/{{ page.isbn }}-L.jpg?default=false"
+          >
           <figcaption>
-            Cover of <em>{{ page.title }}</em> on the <a href="https://openlibrary.org/isbn/{{ page.isbn }}">Open Library</a>.
+            Cover of <em>{{ page.title }}</em> on the
+            <a href="https://openlibrary.org/isbn/{{ page.isbn }}">Open Library</a>.
           </figcaption>
         {% endif %}
       </figure>

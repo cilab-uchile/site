@@ -123,6 +123,7 @@ nav: false
 ## Proyectos y capacidad tecnica
 
 ### Equipamiento base
+
 <div class="card mb-3">
   <div class="card-body">
     <ul class="mb-0">
@@ -134,6 +135,7 @@ nav: false
 </div>
 
 ### Proyectos de referencia
+
 <div class="card mb-3">
   <div class="card-body">
     <ul class="mb-0">
@@ -145,6 +147,7 @@ nav: false
 </div>
 
 ### Responsable academico
+
 <div class="card mb-4">
   <div class="card-body">
     <div class="row g-3 align-items-start">

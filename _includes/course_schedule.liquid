@@ -50,7 +50,9 @@
                           {% if material.url contains '://' %}
                             <a href="{{ material.url }}" target="_blank">{{ material.name }}</a>
                           {% else %}
-                            <a href="{{ material.url | relative_url }}" target="_blank">{{ material.name }}</a>
+                            <a href="{{ material.url | relative_url }}" target="_blank">
+                              {{- material.name -}}
+                            </a>
                           {% endif %}
                         {% else %}
                           {{ material.name }}

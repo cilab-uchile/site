@@ -183,7 +183,9 @@ layout: default
                 {% for entry in section_entries %}
                   {% if entry.bullet %}
                     <ul class="card-text font-weight-light list-group list-group-flush">
-                      <li class="list-group-item">{{ entry.bullet | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+                      <li class="list-group-item">
+                        {{ entry.bullet | markdownify | remove: '<p>' | remove: '</p>' }}
+                      </li>
                     </ul>
                   {% elsif entry.label %}
                     <div class="card-text font-weight-light">
@@ -256,7 +258,9 @@ layout: default
         {% if site.data.resume.basics.summary %}
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Professional Summary</h3>
-            <p>{{ site.data.resume.basics.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+            <p>
+              {{ site.data.resume.basics.summary | markdownify | remove: '<p>' | remove: '</p>' }}
+            </p>
           </div>
         {% endif %}
 
@@ -385,7 +389,10 @@ layout: default
         {% endif %}
 
       {% else %}
-        <p>No CV data found. Please configure either RenderCV (cv.yml) or JSONResume (resume.json) data.</p>
+        <p>
+          No CV data found. Please configure either RenderCV (cv.yml) or JSONResume (resume.json)
+          data.
+        </p>
       {% endif %}
     </div>
   </article>

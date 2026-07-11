@@ -1,0 +1,22 @@
+# Build output and caches
+_site/
+.jekyll-cache/
+.bundle/
+vendor/
+
+# Dependencies
+node_modules/
+
+# Theme vendor code — minified/generated, not ours to reformat
+assets/js/
+assets/css/
+_sass/font-awesome/
+
+# Lockfiles — generated, must not be reformatted
+Gemfile.lock
+package-lock.json
+
+# Binary assets (prettier skips these anyway, but explicit is cheap)
+assets/img/
+assets/webfonts/
+assets/fonts/
