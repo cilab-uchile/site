@@ -71,6 +71,23 @@ lang: es
 {% endfor %}
 </div>
 
+## {% include t.liquid key="people.recent_graduates_heading" %}
+
+<div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 g-3 mb-4">
+{% for student in site.data.students.former_students %}
+  <div class="col">
+    <div class="card h-100">
+      <img class="card-img-top" src="{{ student.image | relative_url }}" alt="Foto de {{ student.name }}">
+      <div class="card-body">
+        <h6 class="card-title mb-1">{{ student.name }}</h6>
+        <p class="text-muted mb-0"><small>{% include td.liquid obj=student key="program" %}</small></p>
+        <p class="text-muted mb-0"><small>{% include t.liquid key="people.graduated_label" %} {{ student.graduation_year }}</small></p>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
+
 ## {% include t.liquid key="people.former_students_heading" %}
 
 <p class="text-muted"><small>{% include t.liquid key="people.former_students_note" %}</small></p>

@@ -57,6 +57,8 @@ people:
   line_collaborators_heading: Collaborating Faculty
   active_students_heading: Thesis Students
   active_students_note: Preliminary list of active students. Names already listed under Former Thesis Students are not repeated, except for Jhon Intriago per instruction.
+  recent_graduates_heading: Recent Graduates
+  graduated_label: Graduated
   former_students_heading: Former Thesis Students
   former_students_note: "Photo mockup in <code>assets/img/people/</code>. Replace with a real photo once available."
   thesis_label: Master's Thesis

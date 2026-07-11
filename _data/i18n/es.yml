@@ -57,6 +57,8 @@ people:
   line_collaborators_heading: Academicos colaboradores de la linea
   active_students_heading: Alumnos Tesistas
   active_students_note: Listado preliminar de alumnos activos. Se evita repetir personas que ya aparecen en Antiguos Tesistas, excepto Jhon Intriago segun indicacion.
+  recent_graduates_heading: Egresados Recientes
+  graduated_label: Graduado
   former_students_heading: Antiguos Tesistas
   former_students_note: "Mockup de foto en <code>assets/img/people/</code>. Reemplazar por foto real cuando exista."
   thesis_label: Tesis de Magister
