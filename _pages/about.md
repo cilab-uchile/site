@@ -52,23 +52,30 @@ lang: es
   (function () {
     const canvas = document.getElementById("tesis-por-anio-chart");
     if (!canvas || typeof Chart === "undefined") return;
+    const hexToRgba = (hex, alpha) => {
+      const value = hex.replace("#", "");
+      const r = parseInt(value.substring(0, 2), 16);
+      const g = parseInt(value.substring(2, 4), 16);
+      const b = parseInt(value.substring(4, 6), 16);
+      return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+    };
     const css = getComputedStyle(document.documentElement);
-    const cyan = (css.getPropertyValue("--global-theme-color") || "#2698ba").trim();
-    const pink = "#f92080";
+    const themeColor = (css.getPropertyValue("--global-theme-color") || "#1d3557").trim();
+    const accentColor = (css.getPropertyValue("--global-hover-color") || "#0f6b66").trim();
     const isDark = () => document.documentElement.getAttribute("data-theme") === "dark";
     const palette = () => {
       if (isDark()) {
         return {
-          line: cyan,
-          fill: "rgba(38, 152, 186, 0.18)",
-          point: pink,
+          line: themeColor,
+          fill: hexToRgba(themeColor, 0.18),
+          point: accentColor,
           pointBorder: "#111111"
         };
       }
       return {
-        line: pink,
-        fill: "rgba(249, 32, 128, 0.15)",
-        point: cyan,
+        line: themeColor,
+        fill: hexToRgba(themeColor, 0.12),
+        point: accentColor,
         pointBorder: "#ffffff"
       };
     };
