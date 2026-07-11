@@ -67,7 +67,6 @@ ul.task-list input[type="checkbox"] {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border: 1px solid var(--global-divider-color);
   border-radius: 0.25rem;
   cursor: pointer;
   transition: opacity 0.15s ease-in-out;
@@ -75,6 +74,10 @@ ul.task-list input[type="checkbox"] {
   &:hover {
     opacity: 0.85;
   }
+}
+
+.gallery-modal-caption {
+  color: #fff;
 }
 
 .gallery-modal-close {

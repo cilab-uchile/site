@@ -1,0 +1,7 @@
+# Lab photo gallery shown on the home page. Add a photo by dropping the
+# file in assets/img/gallery/ and adding an entry here — no template
+# changes needed. `caption` is optional.
+- filename: gallery-01.jpg
+  caption: "Placeholder — replace with a real lab photo."
+- filename: gallery-02.jpg
+  caption: "Placeholder — replace with a real lab photo."
