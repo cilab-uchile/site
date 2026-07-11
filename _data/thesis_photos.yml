@@ -1,0 +1,21 @@
+# Maps the exact "nombre_alumno" value from
+# _data/tesis_magister_profesor_guia_estevez.csv to a photo filename in
+# assets/img/people/. Entries with no real photo available fall back to
+# mockup-estudiante.jpg (see _pages/people.md).
+"Astorga Rocha, Nicolás Javier": nicolas_astorga.jpeg
+"Carmona González, Daniel Andrés": daniel_carmona.jpeg
+"Castiglioni Cornejo, Giovanni Antonio": giovanni_castiglioni.png
+"Cholaky Mejía, Roberto Ignacio": roberto_cholaky.jpeg
+"Cona Flores, Francisca Salomé.": francisca_cona.jpeg
+"De la Sotta Vargas, Rafael Ignacio": rafael_delasotta.jpeg
+"Gamboa Labbé, Bastián Andreas": bastian_gamboa.jpeg
+"García Jara, Germán Eduardo": german_garcia.jpeg
+"González Fuentes, Andrés Eduardo": andres_gonzalez.jpeg
+"Muñoz Bustamante, Cristián Alexis": cristian_munoz.jpeg
+"Neira Ortega, Daniel Alejandro": daniel_neira.jpeg
+"Pimentel Fuentes, Óscar Alberto": oscar_pimentel.jpeg
+"Reyes De Jong, Esteban Dirk": esteban_reyes.png
+"Romero Jofré, Mauricio Javier": mauricio_romero.png
+"Tapia Rivas, Nicolás Igor": nicolas_tapia.jpeg
+"Urrutia Gandolfo, Juan Andrés": juan_urrutia.jpeg
+"Vargas Estay, Alonso Ignacio": alonso_vargas.jpeg

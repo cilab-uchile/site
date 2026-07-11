@@ -97,9 +97,15 @@ lang: es
 <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 g-3 mb-4">
 {% for student in students_grouped %}
   {% assign thesis = student.items | first %}
+  {% assign photo_file = site.data.thesis_photos[student.name] %}
+  {% if photo_file %}
+    {% assign photo_path = photo_file | prepend: "/assets/img/people/" %}
+  {% else %}
+    {% assign photo_path = "/assets/img/people/mockup-estudiante.jpg" %}
+  {% endif %}
   <div class="col">
     <div class="card h-100">
-      <img class="card-img-top" src="{{ '/assets/img/people/mockup-estudiante.jpg' | relative_url }}" alt="Foto mockup de estudiante">
+      <img class="card-img-top" src="{{ photo_path | relative_url }}" alt="Foto de {{ student.name }}">
       <div class="card-body">
         <h6 class="card-title mb-1">{{ student.name }}</h6>
         <p class="text-muted mb-2"><small>{% include t.liquid key="people.thesis_label" %} · {{ thesis.anio_publicacion }}</small></p>

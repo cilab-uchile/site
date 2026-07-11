@@ -62,7 +62,7 @@ people:
   recent_graduates_heading: Egresados Recientes
   graduated_label: Graduado
   former_students_heading: Antiguos Tesistas
-  former_students_note: "Mockup de foto en <code>assets/img/people/</code>. Reemplazar por foto real cuando exista."
+  former_students_note: "La mayoria de las fotos son reales; quienes no tienen foto disponible muestran una imagen de mockup."
   thesis_label: Tesis de Magister
   alumni_heading: Exalumnos y colaboradores frecuentes
   join_heading: Quieres integrarte?

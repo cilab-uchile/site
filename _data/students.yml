@@ -16,7 +16,7 @@ active_students:
     program: "Magister en Ciencia de Datos, Universidad de Chile"
     program_en: "Master's in Data Science, University of Chile"
   - name: "Jose Tomas Concha"
-    image: "/assets/img/people/jose-tomas-concha.jpg"
+    image: "/assets/img/people/josetomas_concha.png"
     program: "Memoria de Ingenieria Electrica, Universidad de Chile"
     program_en: "Undergraduate Thesis in Electrical Engineering, University of Chile"
   - name: "Daryl Clerc"
@@ -65,7 +65,7 @@ former_students:
     program_en: "Master's in Electrical Engineering, University of Chile"
     graduation_year: 2026
   - name: "Edgardo Ramirez"
-    image: "/assets/img/people/edgardo-ramirez.jpg"
+    image: "/assets/img/people/edgardo_ramirez.png"
     program: "Doctorado en Ingenieria Electrica, Universidad de Chile"
     program_en: "PhD in Electrical Engineering, University of Chile"
     graduation_year: 2025
@@ -80,7 +80,7 @@ former_students:
     program_en: "Master's in Data Science, University of Chile"
     graduation_year: 2026
   - name: "Lucas Hormazabal"
-    image: "/assets/img/people/mockup-estudiante.jpg"
+    image: "/assets/img/people/lucas_hormazabal.jpeg"
     program: "Trabajo de Título Pregrado"
     program_en: "Undergraduate Capstone Project"
     graduation_year: 2025

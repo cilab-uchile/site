@@ -62,7 +62,7 @@ people:
   recent_graduates_heading: Recent Graduates
   graduated_label: Graduated
   former_students_heading: Former Thesis Students
-  former_students_note: "Photo mockup in <code>assets/img/people/</code>. Replace with a real photo once available."
+  former_students_note: "Most photos are real; anyone without an available photo shows a placeholder image."
   thesis_label: Master's Thesis
   alumni_heading: Alumni and Frequent Collaborators
   join_heading: Want to Join Us?
