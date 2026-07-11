@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Proyectos
+title_en: Projects
 permalink: /projects/
 nav: true
 nav_order: 2

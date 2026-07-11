@@ -1,0 +1,21 @@
+{%- comment -%}
+  Translation helper for prose fields on _data records (not for
+  names/dates/URLs/numbers, which stay language-neutral).
+  Usage: {% include td.liquid obj=person key="role" %}
+  Looks for a "<key>_en" field alongside "<key>" on the same
+  object. Falls back to the Spanish field at build time (page.lang)
+  and exposes both values via data attributes so the ES/EN navbar
+  toggle can also swap it client-side, same as t.liquid.
+{%- endcomment -%}
+{%- assign td_es = include.obj[include.key] -%}
+{%- assign td_en_key = include.key | append: '_en' -%}
+{%- assign td_en = include.obj[td_en_key] -%}
+{%- assign td_lang = page.lang | default: 'es' -%}
+{%- assign td_value = td_es -%}
+{%- if td_lang == 'en' and td_en and td_en != empty -%}
+  {%- assign td_value = td_en -%}
+{%- endif -%}
+{%- capture td_output -%}
+  <span data-i18n-field data-es="{{ td_es | escape }}" data-en="{{ td_en | escape }}">{{- td_value -}}</span>
+{%- endcapture -%}
+{{- td_output | strip -}}

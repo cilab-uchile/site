@@ -28,6 +28,15 @@ let applyLang = (lang) => {
     }
   });
 
+  // Prose fields sourced from _data (see td.liquid): each element carries its
+  // own ES/EN text as data attributes instead of going through I18N_DICT.
+  document.querySelectorAll("[data-i18n-field]").forEach((el) => {
+    const value = lang === "en" && el.getAttribute("data-en") ? el.getAttribute("data-en") : el.getAttribute("data-es");
+    if (value) {
+      el.textContent = value;
+    }
+  });
+
   const label = document.getElementById("lang-toggle-label");
   if (label) {
     label.textContent = lang.toUpperCase();

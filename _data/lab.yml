@@ -1,11 +1,19 @@
 tagline: "Algoritmos y teoria para entender datos complejos"
+tagline_en: "Algorithms and theory to understand complex data"
 about: "El laboratorio desarrolla investigacion en aprendizaje de maquina, teoria de la informacion y redes neuronales, con foco reciente en modelos de atencion, aprendizaje auto-supervisado, vision por computador y analisis de series de tiempo."
+about_en: "The lab conducts research in machine learning, information theory, and neural networks, with a recent focus on attention models, self-supervised learning, computer vision, and time series analysis."
 
 focus_areas:
   - "Astroinformatica: clasificacion de curvas de luz, deteccion de novedades y objetos transientes"
   - "IA biomedica: explicabilidad (xAI), EEG de sueno/epilepsia, segmentacion y apoyo a diagnostico en imagenes medicas"
   - "Modelos modernos de IA: atencion, transformers, LLM, auto-supervisado y deep learning"
   - "Metodologia de inteligencia computacional: teoria de informacion, regresion simbolica y optimizacion"
+
+focus_areas_en:
+  - "Astroinformatics: light-curve classification, novelty detection, and transient objects"
+  - "Biomedical AI: explainability (xAI), sleep/epilepsy EEG, segmentation, and diagnostic support in medical imaging"
+  - "Modern AI models: attention, transformers, LLMs, self-supervised learning, and deep learning"
+  - "Computational intelligence methodology: information theory, symbolic regression, and optimization"
 
 thesis_snapshot:
   period: "2021-2024"
@@ -20,6 +28,7 @@ thesis_snapshot:
     metodos_modernos_ia: 11
     biomedica_neuro: 6
   note: "Conteo exploratorio basado en titulos del CSV de tesis de Magister con Pablo Estevez como guia."
+  note_en: "Exploratory count based on titles from the Master's thesis CSV with Pablo Estévez as advisor."
 
 equipment:
   - "8 PCs Intel i5"
@@ -35,6 +44,7 @@ projects:
 responsible:
   name: "Pablo A. Estévez"
   role: "Profesor Titular, Universidad de Chile · Académico responsable"
+  role_en: "Full Professor, University of Chile · Lab Lead"
   degree: "Dr. Ing. (University of Tokyo, Japon)"
   email: "pestevez@cec.uchile.cl"
   phone: "+56 2 2978 4211"

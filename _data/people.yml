@@ -1,22 +1,30 @@
 leadership:
   - name: "Pablo A. Estévez"
     role: "Profesor Titular, Universidad de Chile · Academico Responsable"
+    role_en: "Full Professor, University of Chile · Lab Lead"
     focus: "Redes neuronales, selección de características, astroinformática"
+    focus_en: "Neural networks, feature selection, astroinformatics"
     profile: "https://www.die.cl/pablo-estevez-2/"
     scholar: "https://scholar.google.com/citations?user=SM1ghUEAAAAJ&hl=es"
 
 line_collaborators:
   - name: "Claudio Pérez"
     role: "Profesor Titular"
+    role_en: "Full Professor"
     focus: "Procesamiento de imágenes y reconocimiento de patrones"
+    focus_en: "Image processing and pattern recognition"
     profile: "https://www.die.cl/claudio-perez-2/"
   - name: "Javier Ruiz del Solar"
     role: "Profesor Titular"
+    role_en: "Full Professor"
     focus: "Robótica"
+    focus_en: "Robotics"
     profile: "https://www.die.cl/javier-ruiz-del-solar/"
   - name: "Martin Adams"
     role: "Profesor Titular"
+    role_en: "Full Professor"
     focus: "Robótica y navegación autónoma"
+    focus_en: "Robotics and autonomous navigation"
     profile: "https://www.die.cl/martin-adams-2/"
 
 alumni_mentions:

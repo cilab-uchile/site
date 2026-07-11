@@ -1,24 +1,30 @@
 ---
 layout: page
 title: Inicio
+title_en: Home
 permalink: /
 nav: false
 nav_key: nav.about
 lang: es
 ---
 
-{{ site.data.lab.tagline }}.
+{% include td.liquid obj=site.data.lab key="tagline" %}.
 
-{{ site.data.lab.about }}
+{% include td.liquid obj=site.data.lab key="about" %}
 
 ## {% include t.liquid key="about.active_lines_heading" %}
 
 <div class="row row-cols-1 row-cols-md-2 g-3 mb-4">
 {% for area in site.data.lab.focus_areas %}
+  {% assign area_en = site.data.lab.focus_areas_en[forloop.index0] %}
+  {% assign area_display = area %}
+  {% if page.lang == "en" and area_en and area_en != empty %}
+    {% assign area_display = area_en %}
+  {% endif %}
   <div class="col">
     <div class="card h-100">
       <div class="card-body">
-        <p class="card-text mb-0">{{ area }}</p>
+        <p class="card-text mb-0"><span data-i18n-field data-es="{{ area | escape }}" data-en="{{ area_en | escape }}">{{- area_display -}}</span></p>
       </div>
     </div>
   </div>
@@ -30,7 +36,7 @@ lang: es
 <div class="card mb-3">
   <div class="card-body">
     <p class="mb-2">{% include t.liquid key="about.thesis_intro_prefix" %}{{ site.data.lab.thesis_snapshot.period }}{% include t.liquid key="about.thesis_intro_middle" %}<strong>{{ site.data.lab.thesis_snapshot.total_magister_theses }}{% include t.liquid key="about.thesis_intro_bold_suffix" %}</strong>{% include t.liquid key="about.thesis_intro_suffix" %}</p>
-    <p class="mb-0"><small class="text-muted">{{ site.data.lab.thesis_snapshot.note }}</small></p>
+    <p class="mb-0"><small class="text-muted">{% include td.liquid obj=site.data.lab.thesis_snapshot key="note" %}</small></p>
   </div>
 </div>
 
@@ -158,7 +164,7 @@ lang: es
       </div>
       <div class="col-12 col-lg-8">
         <p class="mb-1"><strong>{{ site.data.lab.responsible.name }}</strong></p>
-        <p class="mb-1">{{ site.data.lab.responsible.role }}</p>
+        <p class="mb-1">{% include td.liquid obj=site.data.lab.responsible key="role" %}</p>
         <p class="mb-1">{{ site.data.lab.responsible.degree }}</p>
         <p class="mb-1">{% include t.liquid key="common.email_label" %} <a href="mailto:{{ site.data.lab.responsible.email }}">{{ site.data.lab.responsible.email }}</a></p>
         <p class="mb-0"><a href="{{ site.data.lab.responsible.scholar }}" target="_blank" rel="noopener noreferrer">{% include t.liquid key="common.google_scholar_profile" %}</a></p>
@@ -190,7 +196,7 @@ lang: es
   <div class="card-body">
     <ul class="mb-0">
     {% for item in site.data.news %}
-      <li><strong>{{ item.date }}</strong> · {{ item.text }}</li>
+      <li><strong>{{ item.date }}</strong> · {% include td.liquid obj=item key="text" %}</li>
     {% endfor %}
     </ul>
   </div>

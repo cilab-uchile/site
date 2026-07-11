@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Impacto
+title_en: Impact
 permalink: /impacts/
 nav: true
 nav_order: 6

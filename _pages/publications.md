@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Publicaciones
+title_en: Publications
 permalink: /publications/
 nav: true
 nav_order: 3
@@ -20,7 +21,7 @@ lang: es
         <h5 class="card-title">{{ pub.title }}</h5>
         <p class="mb-1"><em>{{ pub.authors }}</em></p>
         <p class="text-muted mb-2"><small>{{ pub.venue }}, {{ pub.year }} · {{ pub.cites }} {% include t.liquid key="common.citations_suffix" %}</small></p>
-        <p class="mb-2">{{ pub.note }}</p>
+        <p class="mb-2">{% include td.liquid obj=pub key="note" %}</p>
         <a href="{{ pub.link }}" target="_blank" rel="noopener noreferrer">{% include t.liquid key="common.view_record" %}</a>
       </div>
     </div>

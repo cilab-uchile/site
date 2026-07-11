@@ -1,11 +1,15 @@
 - date: "02/2026"
   text: "Se publica una nueva versión del sitio del laboratorio con estructura abierta para colaboración y actualización por agentes AI."
+  text_en: "A new version of the lab's site is published, with an open structure for collaboration and updates by AI agents."
 
 - date: "2025"
   text: "El sitio DIE actualiza el perfil del laboratorio y del académico responsable con foco en inteligencia computacional y robótica."
+  text_en: "The DIE site updates the lab and lab lead's profile with a focus on computational intelligence and robotics."
 
 - date: "2024"
   text: "Se registran nuevas tesis de postgrado en clasificación de curvas de luz y modelos de atención."
+  text_en: "New graduate theses are recorded in light-curve classification and attention models."
 
 - date: "2023"
   text: "Se registran tesis en selección de características y predicción de supernovas con redes neuronales recurrentes."
+  text_en: "Theses are recorded in feature selection and supernova prediction using recurrent neural networks."

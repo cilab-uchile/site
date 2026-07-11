@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Visitanos
+title_en: Visit Us
 permalink: /visit/
 nav: true
 nav_order: 5

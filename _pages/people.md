@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Personas
+title_en: People
 permalink: /people/
 nav: true
 nav_order: 4
@@ -23,8 +24,8 @@ lang: es
           </div>
           <div class="col-12 col-lg-8">
             <h5 class="card-title mb-1">{{ person.name }}</h5>
-            <p class="text-muted mb-2"><small>{{ person.role }}</small></p>
-            <p class="mb-2">{{ person.focus }}</p>
+            <p class="text-muted mb-2"><small>{% include td.liquid obj=person key="role" %}</small></p>
+            <p class="mb-2">{% include td.liquid obj=person key="focus" %}</p>
             <a href="{{ person.profile }}" target="_blank" rel="noopener noreferrer">{% include t.liquid key="common.institutional_profile" %}</a> ·
             <a href="{{ person.scholar }}" target="_blank" rel="noopener noreferrer">{% include t.liquid key="common.google_scholar" %}</a>
           </div>
@@ -43,8 +44,8 @@ lang: es
     <div class="card h-100">
       <div class="card-body">
         <h6 class="card-title mb-1">{{ person.name }}</h6>
-        <p class="text-muted mb-2"><small>{{ person.role }}</small></p>
-        <p class="mb-2">{{ person.focus }}</p>
+        <p class="text-muted mb-2"><small>{% include td.liquid obj=person key="role" %}</small></p>
+        <p class="mb-2">{% include td.liquid obj=person key="focus" %}</p>
         <a href="{{ person.profile }}" target="_blank" rel="noopener noreferrer">{% include t.liquid key="common.profile" %}</a>
       </div>
     </div>
@@ -63,7 +64,7 @@ lang: es
       <img class="card-img-top" src="{{ student.image | relative_url }}" alt="Foto de {{ student.name }}">
       <div class="card-body">
         <h6 class="card-title mb-1">{{ student.name }}</h6>
-        <p class="text-muted mb-0"><small>{{ student.program }}</small></p>
+        <p class="text-muted mb-0"><small>{% include td.liquid obj=student key="program" %}</small></p>
       </div>
     </div>
   </div>
