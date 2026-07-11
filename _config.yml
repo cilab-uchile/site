@@ -41,6 +41,7 @@ exclude:
   - node_modules
   - package.json
   - package-lock.json
+  - CLAUDE.md
   - Dockerfile
   - docker-compose.yml
   - docker-compose-slim.yml

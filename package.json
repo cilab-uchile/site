@@ -1,0 +1,9 @@
+{
+  "name": "cilab-site",
+  "private": true,
+  "description": "Linting tooling for the CI Lab Jekyll site (no build step, no runtime deps).",
+  "devDependencies": {
+    "prettier": "^3.9.5",
+    "@shopify/prettier-plugin-liquid": "^1.10.3"
+  }
+}

@@ -30,7 +30,12 @@
             <tbody>
               <tr>
                 <td>
-                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">{{ date }}</span>
+                  <span
+                    class="badge font-weight-bold danger-color-dark text-uppercase align-middle"
+                    style="min-width: 75px"
+                  >
+                    {{- date -}}
+                  </span>
                 </td>
               </tr>
               {% capture location %}
@@ -79,7 +84,9 @@
             <ul class="items">
               {% for item in entry.highlights %}
                 <li>
-                  <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+                  <span class="item">
+                    {{- item | markdownify | remove: '<p>' | remove: '</p>' -}}
+                  </span>
                 </li>
               {% endfor %}
             </ul>

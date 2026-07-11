@@ -7,7 +7,9 @@ layout: default
       <h1 class="post-title"><i class="fa-solid fa-tag fa-sm"></i> {{ page.title }}</h1>
       <p class="post-description">an archive of {{ page.collection_name }} in this category</p>
     {% elsif page.type == 'year' %}
-      <h1 class="post-title"><i class="fa-solid fa-calendar fa-sm"></i> {{ page.date | date: '%Y' }}</h1>
+      <h1 class="post-title">
+        <i class="fa-solid fa-calendar fa-sm"></i> {{ page.date | date: '%Y' }}
+      </h1>
       <p class="post-description">an archive of {{ page.collection_name }} from this year</p>
     {% elsif page.type == 'tags' %}
       <h1 class="post-title"><i class="fa-solid fa-hashtag fa-sm"></i> {{ page.title }}</h1>
@@ -23,11 +25,17 @@ layout: default
             <th scope="row">{{ document.date | date: '%b %d, %Y' }}</th>
             <td>
               {% if document.redirect == blank %}
-                <a class="post-link" href="{{ document.url | relative_url }}">{{ document.title }}</a>
+                <a class="post-link" href="{{ document.url | relative_url }}">
+                  {{- document.title -}}
+                </a>
               {% elsif document.redirect contains '://' %}
-                <a class="post-link" href="{{ document.redirect }}" target="_blank">{{ document.title }}</a>
+                <a class="post-link" href="{{ document.redirect }}" target="_blank">
+                  {{- document.title -}}
+                </a>
               {% else %}
-                <a class="post-link" href="{{ document.redirect | relative_url }}">{{ document.title }}</a>
+                <a class="post-link" href="{{ document.redirect | relative_url }}">
+                  {{- document.title -}}
+                </a>
               {% endif %}
             </td>
           </tr>

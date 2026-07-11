@@ -1,0 +1,13 @@
+{
+  "printWidth": 100,
+  "proseWrap": "preserve",
+  "plugins": ["@shopify/prettier-plugin-liquid"],
+  "overrides": [
+    {
+      "files": ["_layouts/**/*.html", "_includes/**/*.html"],
+      "options": {
+        "parser": "liquid-html"
+      }
+    }
+  ]
+}
