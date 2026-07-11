@@ -3,13 +3,15 @@ layout: page
 title: Inicio
 permalink: /
 nav: false
+nav_key: nav.about
+lang: es
 ---
 
 {{ site.data.lab.tagline }}.
 
 {{ site.data.lab.about }}
 
-## Lineas activas
+## {% include t.liquid key="about.active_lines_heading" %}
 
 <div class="row row-cols-1 row-cols-md-2 g-3 mb-4">
 {% for area in site.data.lab.focus_areas %}
@@ -23,18 +25,18 @@ nav: false
 {% endfor %}
 </div>
 
-## Sintesis reciente desde tesis de Magister
+## {% include t.liquid key="about.thesis_synthesis_heading" %}
 
 <div class="card mb-3">
   <div class="card-body">
-    <p class="mb-2">Entre {{ site.data.lab.thesis_snapshot.period }} se registran <strong>{{ site.data.lab.thesis_snapshot.total_magister_theses }} tesis de Magister</strong> con guia del laboratorio. Las tesis muestran crecimiento sostenido y consolidacion de lineas en astroinformatica, IA biomedica y modelos modernos de aprendizaje.</p>
+    <p class="mb-2">{% include t.liquid key="about.thesis_intro_prefix" %}{{ site.data.lab.thesis_snapshot.period }}{% include t.liquid key="about.thesis_intro_middle" %}<strong>{{ site.data.lab.thesis_snapshot.total_magister_theses }}{% include t.liquid key="about.thesis_intro_bold_suffix" %}</strong>{% include t.liquid key="about.thesis_intro_suffix" %}</p>
     <p class="mb-0"><small class="text-muted">{{ site.data.lab.thesis_snapshot.note }}</small></p>
   </div>
 </div>
 
 <div class="card mb-4">
   <div class="card-body">
-    <h6 class="card-title mb-3">Tesis de Magister por Año (2021-2024)</h6>
+    <h6 class="card-title mb-3">{% include t.liquid key="about.thesis_chart_title" %}</h6>
     <canvas id="tesis-por-anio-chart" height="120" aria-label="Grafico de tesis por anio" role="img"></canvas>
   </div>
 </div>
@@ -71,7 +73,7 @@ nav: false
       data: {
         labels: ["2021", "2022", "2023", "2024"],
         datasets: [{
-          label: "Tesis de Magister por Año",
+          label: "{% include t.liquid key='about.chart_series_label' plain=true %}",
           data: [
             {{ site.data.lab.thesis_snapshot.yearly_counts["2021"] }},
             {{ site.data.lab.thesis_snapshot.yearly_counts["2022"] }},
@@ -99,10 +101,10 @@ nav: false
           y: {
             beginAtZero: true,
             ticks: { precision: 0, stepSize: 1 },
-            title: { display: true, text: "Cantidad de tesis" }
+            title: { display: true, text: "{% include t.liquid key='about.chart_y_axis_label' plain=true %}" }
           },
           x: {
-            title: { display: true, text: "Año" }
+            title: { display: true, text: "{% include t.liquid key='about.chart_x_axis_label' plain=true %}" }
           }
         }
       }
@@ -120,9 +122,9 @@ nav: false
   })();
 </script>
 
-## Proyectos y capacidad tecnica
+## {% include t.liquid key="about.projects_capacity_heading" %}
 
-### Equipamiento base
+### {% include t.liquid key="about.base_equipment_heading" %}
 
 <div class="card mb-3">
   <div class="card-body">
@@ -134,7 +136,7 @@ nav: false
   </div>
 </div>
 
-### Proyectos de referencia
+### {% include t.liquid key="about.reference_projects_heading" %}
 
 <div class="card mb-3">
   <div class="card-body">
@@ -146,7 +148,7 @@ nav: false
   </div>
 </div>
 
-### Responsable academico
+### {% include t.liquid key="about.academic_lead_heading" %}
 
 <div class="card mb-4">
   <div class="card-body">
@@ -158,14 +160,14 @@ nav: false
         <p class="mb-1"><strong>{{ site.data.lab.responsible.name }}</strong></p>
         <p class="mb-1">{{ site.data.lab.responsible.role }}</p>
         <p class="mb-1">{{ site.data.lab.responsible.degree }}</p>
-        <p class="mb-1">Email: <a href="mailto:{{ site.data.lab.responsible.email }}">{{ site.data.lab.responsible.email }}</a></p>
-        <p class="mb-0"><a href="{{ site.data.lab.responsible.scholar }}" target="_blank" rel="noopener noreferrer">Perfil en Google Scholar</a></p>
+        <p class="mb-1">{% include t.liquid key="common.email_label" %} <a href="mailto:{{ site.data.lab.responsible.email }}">{{ site.data.lab.responsible.email }}</a></p>
+        <p class="mb-0"><a href="{{ site.data.lab.responsible.scholar }}" target="_blank" rel="noopener noreferrer">{% include t.liquid key="common.google_scholar_profile" %}</a></p>
       </div>
     </div>
   </div>
 </div>
 
-## Blog de proyectos
+## {% include t.liquid key="about.project_blog_heading" %}
 
 {% assign recent_projects = site.projects | sort: 'year' | reverse %}
 <div class="row row-cols-1 row-cols-lg-2 g-3 mb-4">
@@ -182,7 +184,7 @@ nav: false
 {% endfor %}
 </div>
 
-## Noticias
+## {% include t.liquid key="about.news_heading" %}
 
 <div class="card mb-4">
   <div class="card-body">
@@ -194,13 +196,13 @@ nav: false
   </div>
 </div>
 
-## Metricas del perfil del profesor
+## {% include t.liquid key="about.professor_metrics_heading" %}
 
 <div class="row row-cols-2 row-cols-lg-4 g-2 mb-2">
-  <div class="col"><div class="card"><div class="card-body text-center"><strong>8305</strong><br><small>citas totales</small></div></div></div>
-  <div class="col"><div class="card"><div class="card-body text-center"><strong>40</strong><br><small>indice h</small></div></div></div>
-  <div class="col"><div class="card"><div class="card-body text-center"><strong>96</strong><br><small>indice i10</small></div></div></div>
-  <div class="col"><div class="card"><div class="card-body text-center"><strong>4366</strong><br><small>citas desde 2021</small></div></div></div>
+  <div class="col"><div class="card"><div class="card-body text-center"><strong>8305</strong><br><small>{% include t.liquid key="about.total_citations" %}</small></div></div></div>
+  <div class="col"><div class="card"><div class="card-body text-center"><strong>40</strong><br><small>{% include t.liquid key="about.h_index" %}</small></div></div></div>
+  <div class="col"><div class="card"><div class="card-body text-center"><strong>96</strong><br><small>{% include t.liquid key="about.i10_index" %}</small></div></div></div>
+  <div class="col"><div class="card"><div class="card-body text-center"><strong>4366</strong><br><small>{% include t.liquid key="about.citations_since_2021" %}</small></div></div></div>
 </div>
 
-_Fuente: perfil publico de Google Scholar de Pablo A. Estevez (captura consultada en febrero 2026)._
+_{% include t.liquid key="about.scholar_source_note" %}_

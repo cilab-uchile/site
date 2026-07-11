@@ -1,0 +1,30 @@
+{%- comment -%}
+  Translation helper. Usage: {% include t.liquid key="nav.people" %}
+  Add `plain=true` inside attributes (alt, title, meta content) or <script>
+  blocks, where the data-i18n span wrapper would be invalid — plain output
+  is build-time only and does not swap when the language toggle is used.
+
+  Reads page.lang (falls back to "es") to pick the default-rendered string.
+  Unknown keys return the key itself so a typo shows up on the page instead
+  of silently disappearing.
+{%- endcomment -%}
+{%- assign t_lang = page.lang | default: 'es' -%}
+{%- assign t_dict = site.data.i18n[t_lang] -%}
+{%- if t_dict == null -%}
+  {%- assign t_dict = site.data.i18n.es -%}
+{%- endif -%}
+{%- assign t_keys = include.key | split: '.' -%}
+{%- assign t_value = t_dict -%}
+{%- for t_key in t_keys -%}
+  {%- if t_value -%}
+    {%- assign t_value = t_value[t_key] -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if t_value == null or t_value == empty -%}
+  {%- assign t_value = include.key -%}
+{%- endif -%}
+{%- if include.plain -%}
+  {{- t_value -}}
+{%- else -%}
+  <span data-i18n="{{ include.key }}">{{- t_value -}}</span>
+{%- endif -%}
