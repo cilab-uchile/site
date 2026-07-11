@@ -149,7 +149,7 @@ nav: false
   <div class="card-body">
     <div class="row g-3 align-items-start">
       <div class="col-12 col-lg-4">
-        <img class="img-fluid rounded" src="{{ '/labinteligencia-2070241131.jpg' | relative_url }}" alt="Profesor Pablo Estevez en el laboratorio">
+        <img class="img-fluid rounded" src="{{ '/assets/img/labinteligencia-2070241131.jpg' | relative_url }}" alt="Profesor Pablo Estevez en el laboratorio">
       </div>
       <div class="col-12 col-lg-8">
         <p class="mb-1"><strong>{{ site.data.lab.responsible.name }}</strong></p>
