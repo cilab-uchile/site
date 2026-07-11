@@ -16,7 +16,7 @@ abstract: "ALeRCE es un broker de alertas astronómicas que recibe eventos de gr
 citation: "Forster, F. et al. (2021). The automatic learning for the rapid classification of events (ALeRCE) alert broker. The Astronomical Journal."
 method: "La arquitectura combina un pipeline de ingestión masiva, preprocesamiento de series de tiempo irregulares, cálculo de features y modelos de clasificación entrenados con eventos etiquetados históricamente. Se aplican validaciones cruzadas y actualización periódica de modelos para mantener rendimiento bajo drift temporal."
 results: "El sistema permite priorizar y clasificar alertas en tiempo cercano al real, reduciendo la carga manual de inspección y acelerando descubrimientos. Este enfoque ha sido usado en tesis del laboratorio orientadas a clasificación de curvas de luz y predicción de supernovas."
-method_figure: "https://images.unsplash.com/photo-1518329784035-7aaf4c6f4d6a?auto=format&fit=crop&w=1200&q=80"
+method_figure: "https://images.unsplash.com/photo-1465101162946-4377e57745c3?auto=format&fit=crop&w=1200&q=80"
 method_caption: "Esquema referencial de pipeline para análisis de señales y clasificación automática."
 result_figure: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1200&q=80"
 result_caption: "Visualización astronómica referencial para sección de resultados (placeholder)."

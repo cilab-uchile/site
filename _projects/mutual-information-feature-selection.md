@@ -15,7 +15,7 @@ method: "Se comparan estrategias filtro y envolvente apoyadas en criterios de de
 results: "La familia de métodos de información mutua mostró alta robustez frente a dimensionalidad alta y ruido, y se consolidó como base para desarrollos posteriores del laboratorio en minería de datos, bioseñales y astroinformática."
 method_figure: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80"
 method_caption: "Diagrama referencial para el flujo de selección de características (placeholder)."
-result_figure: "https://images.unsplash.com/photo-1551281044-8a78c6f5f99f?auto=format&fit=crop&w=1200&q=80"
+result_figure: "https://images.unsplash.com/photo-1502134249126-9f3755a50d78?auto=format&fit=crop&w=1200&q=80"
 result_caption: "Panel referencial de comparación de resultados y desempeño (placeholder)."
 links:
   - label: "Paper"

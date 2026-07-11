@@ -57,7 +57,7 @@ lang: es
 
 <p class="text-muted"><small>{% include t.liquid key="people.active_students_note" %}</small></p>
 
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mb-4">
+<div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 g-3 mb-4">
 {% for student in site.data.students.active_students %}
   <div class="col">
     <div class="card h-100">
@@ -77,7 +77,7 @@ lang: es
 
 {% assign students_sorted = site.data.tesis_magister_profesor_guia_estevez | sort: "anio_publicacion" | reverse %}
 {% assign students_grouped = students_sorted | group_by: "nombre_alumno" %}
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mb-4">
+<div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 g-3 mb-4">
 {% for student in students_grouped %}
   {% assign thesis = student.items | first %}
   <div class="col">

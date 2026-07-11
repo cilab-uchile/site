@@ -59,6 +59,22 @@
     color: var(--global-text-color);
   }
 
+  @media (max-width: 575.98px) {
+    .navbar-brand {
+      flex-shrink: 1;
+      min-width: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-size: 0.9rem;
+      margin-right: 0.5rem;
+    }
+
+    .navbar-toggler {
+      flex-shrink: 0;
+    }
+  }
+
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
 
@@ -175,6 +191,12 @@
 @media (min-width: 576px) {
   #light-toggle {
     transform: translateY(4px);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .toggle-container + .toggle-container {
+    margin-top: 0.75rem;
   }
 }
 
