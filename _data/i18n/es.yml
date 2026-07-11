@@ -28,6 +28,8 @@ footer:
   text: Departamento de Ingenieria Electrica, Universidad de Chile.
 
 about:
+  gallery_heading: Galeria del Laboratorio
+  gallery_photo_alt: Foto del laboratorio
   active_lines_heading: Lineas activas
   thesis_synthesis_heading: Sintesis reciente desde tesis de Magister
   thesis_intro_prefix: "Entre "

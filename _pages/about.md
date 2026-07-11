@@ -12,6 +12,30 @@ lang: es
 
 {% include td.liquid obj=site.data.lab key="about" %}
 
+## {% include t.liquid key="about.gallery_heading" %}
+
+{% assign gallery_images = site.static_files | where_exp: "file", "file.path contains '/assets/img/gallery/'" | sort: "name" %}
+<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3 mb-4">
+{% for image in gallery_images %}
+  <div class="col">
+    <a href="#" role="button" data-toggle="modal" data-target="#gallery-modal-{{ forloop.index }}">
+      <img class="gallery-thumb" src="{{ image.path | relative_url }}" alt="{% include t.liquid key='about.gallery_photo_alt' plain=true %} {{ forloop.index }}">
+    </a>
+  </div>
+{% endfor %}
+</div>
+
+{% for image in gallery_images %}
+  <div class="modal fade" id="gallery-modal-{{ forloop.index }}" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-transparent border-0">
+        <button type="button" class="btn-close btn-close-white gallery-modal-close" data-dismiss="modal" aria-label="Close"></button>
+        <img class="img-fluid rounded" src="{{ image.path | relative_url }}" alt="{% include t.liquid key='about.gallery_photo_alt' plain=true %} {{ forloop.index }}">
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
 ## {% include t.liquid key="about.active_lines_heading" %}
 
 <div class="row row-cols-1 row-cols-md-2 g-3 mb-4">

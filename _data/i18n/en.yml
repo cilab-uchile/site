@@ -28,6 +28,8 @@ footer:
   text: Department of Electrical Engineering, University of Chile.
 
 about:
+  gallery_heading: Lab Gallery
+  gallery_photo_alt: Lab photo
   active_lines_heading: Active Research Lines
   thesis_synthesis_heading: Recent Insights from Master's Theses
   thesis_intro_prefix: "Between "
