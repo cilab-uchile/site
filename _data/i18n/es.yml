@@ -5,6 +5,7 @@ nav:
   publications: Publicaciones
   visit: Visitanos
   impacts: Impacto
+  gallery: Galeria
 
 common:
   toggle_navigation: Alternar navegacion
@@ -27,9 +28,11 @@ common:
 footer:
   text: Departamento de Ingenieria Electrica, Universidad de Chile.
 
+gallery:
+  intro: Fotos del laboratorio y sus actividades.
+  photo_alt: Foto del laboratorio
+
 about:
-  gallery_heading: Galeria del Laboratorio
-  gallery_photo_alt: Foto del laboratorio
   active_lines_heading: Lineas activas
   thesis_synthesis_heading: Sintesis reciente desde tesis de Magister
   thesis_intro_prefix: "Entre "

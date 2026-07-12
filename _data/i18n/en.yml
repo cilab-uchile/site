@@ -5,6 +5,7 @@ nav:
   publications: Publications
   visit: Visit Us
   impacts: Impact
+  gallery: Gallery
 
 common:
   toggle_navigation: Toggle navigation
@@ -27,9 +28,11 @@ common:
 footer:
   text: Department of Electrical Engineering, University of Chile.
 
+gallery:
+  intro: Photos from the lab and its activities.
+  photo_alt: Lab photo
+
 about:
-  gallery_heading: Lab Gallery
-  gallery_photo_alt: Lab photo
   active_lines_heading: Active Research Lines
   thesis_synthesis_heading: Recent Insights from Master's Theses
   thesis_intro_prefix: "Between "
