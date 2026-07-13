@@ -20,7 +20,7 @@ lang: es
       <div class="card-body">
         <div class="row g-3 align-items-start">
           <div class="col-12 col-lg-4">
-            <img class="img-fluid rounded" src="{{ '/assets/img/labinteligencia-2070241131.jpg' | relative_url }}" alt="Profesor Pablo Estevez en el laboratorio">
+            <img class="img-fluid rounded" src="{{ '/assets/img/people/pablo-estevez.jpg' | relative_url }}" alt="{{ person.name }}">
           </div>
           <div class="col-12 col-lg-8">
             <h5 class="card-title mb-1">{{ person.name }}</h5>
