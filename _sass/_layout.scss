@@ -29,6 +29,16 @@ body.sticky-bottom-footer {
   padding-bottom: 0;
 }
 
+body.has-wallpaper {
+  background-image:
+    linear-gradient(var(--global-wallpaper-overlay), var(--global-wallpaper-overlay)),
+    var(--wallpaper-url);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .container {
   max-width: v.$max-content-width;
 }

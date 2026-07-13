@@ -20,6 +20,7 @@
   --global-divider-color: #{v.$divider-light-color};
   --global-card-bg-color: #{v.$white-color};
   --global-highlight-color: #{v.$red-color-dark};
+  --global-wallpaper-overlay: rgba(255, 255, 255, 0.78);
   --bs-primary: #{v.$navy-color};
   --bs-link-color: #{v.$navy-color};
   --global-back-to-top-bg-color: rgba(
@@ -91,6 +92,7 @@ html[data-theme="dark"] {
   --global-distill-app-color: #{v.$grey-color-light};
   --global-divider-color: #{v.$divider-dark-color};
   --global-card-bg-color: #{v.$grey-900};
+  --global-wallpaper-overlay: rgba(20, 22, 27, 0.78);
   --bs-primary: #{v.$steel-blue-color};
   --bs-link-color: #{v.$steel-blue-color};
   --global-back-to-top-bg-color: rgba(
